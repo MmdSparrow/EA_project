@@ -1,14 +1,18 @@
 from numpy import random
 
+
 class Individual:
     """
     this class is an abstraction of individual which contain two attribute:
-    1- genome: list of genes (e.g. [0,1,2] for a genome with length 3) 
+    1- genome: list of genes (e.g. [0,1,2] for a genome with length 3)
     2- fitness: fitness value of the individual
     """
+
     def __init__(self, genome_length=30, generate_random_genome=True) -> None:
         if generate_random_genome:
-            self.genome = _generate_uniform_random_permutation([x for x in range(genome_length)])
+            self.genome = _generate_uniform_random_permutation(
+                [x for x in range(genome_length)]
+            )
         else:
             self.genome = None
         self.fitness = None
@@ -24,7 +28,7 @@ class Individual:
 
     def __eq__(self, value: object) -> bool:
         return self.genome == value.genome
-    
+
 
 def _generate_uniform_random_permutation(valid_delivery_spots):
     return random.permutation(valid_delivery_spots).tolist()

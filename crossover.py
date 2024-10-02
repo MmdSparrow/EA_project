@@ -1,6 +1,7 @@
 from selection import select_two_individual_for_crossover
 
+
 def cross_over():
-    #TOOD
+    # TOOD
     # hint: use 'select_two_individual_for_crossover'
     pass

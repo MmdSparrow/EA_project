@@ -38,6 +38,7 @@ def run_algorithm(
 
         random.shuffle(population)
 
+
 def primary_population_creator(
     population_size: int, genome_size: int
 ) -> list[Individual]:
