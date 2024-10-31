@@ -1,7 +1,6 @@
-from selection import select_two_individual_for_crossover
+from individual import Individual
 
 
-def cross_over():
+def cross_over(parent1: Individual, parent2: Individual):
     # TOOD
-    # hint: use 'select_two_individual_for_crossover'
     pass

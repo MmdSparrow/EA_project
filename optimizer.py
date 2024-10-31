@@ -2,7 +2,7 @@ import random
 
 from individual import Individual
 from evaluation import evaluate, evaluate_all
-from selection import next_generation_selection
+from selection import select_two_individual_for_crossover
 
 
 def run_algorithm(
@@ -11,6 +11,9 @@ def run_algorithm(
     generation_size=30,
 ):
     MUTATION_RATE = 0.3
+    best_fitness_list = []
+    avg_fitness_list = []
+    best_individual = None
     genome_size = len(distance_matrix)
 
     # create primary population
@@ -36,11 +39,28 @@ def run_algorithm(
 
         # TODO: redefine 'population' for the next iteration
 
+        # don't change following codes
+        best_fitness_list.append(best_fitness(population))
+        avg_fitness_list.append(avg_fitness(population))
         random.shuffle(population)
 
+    return best_individual, best_fitness_list, avg_fitness_list
 
 def primary_population_creator(
     population_size: int, genome_size: int
 ) -> list[Individual]:
     # TODO: this method create primary individual based on input population size and return them as list of individuals
+    pass
+
+def avg_fitness(
+        population:list[Individual]
+) -> float:
+    # TODO: this method calculates average of individuals fitness
+    pass
+
+
+def best_fitness(
+        population:list[Individual]
+) -> float:
+    # TODO: this method finds best fitness in the population
     pass
