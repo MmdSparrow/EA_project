@@ -25,7 +25,7 @@ def run_algorithm(
 
         # mutation
         for individual in generated_individuals:
-            # TODO: by use of a random number and 'MUTATION_RATE' decide to mutate the individual or not
+            # TODO: by using a random number and 'MUTATION_RATE', decide whether to mutate the individual or not    
             pass
 
         # TODO: evaluate generated_individuals
@@ -34,7 +34,7 @@ def run_algorithm(
 
         # TODO: check termination condition on generated individuals
 
-        # TODO: redifine 'population' for next iteration
+        # TODO: redefine 'population' for the next iteration
 
         random.shuffle(population)
 

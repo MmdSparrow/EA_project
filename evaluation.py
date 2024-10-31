@@ -7,6 +7,6 @@ def evaluate_all(individual_list: list[Individual]):
 
 
 def evaluate(individual: Individual):
-    # TODO: this method compute fitness (based on TSP problem) and update fitness attribute of input individual (individual.fitness=new_fitness)
-    # hint: as dr.ebadzade said in the class you can use -c to reverse fitness value c
+    # TODO: this method computes fitness (based on the TSP problem) and updates the fitness attribute of the individual parameter (individual.fitness=new_fitness)
+    # hint: as taught by Dr. Ebadzadeh in the class, you may use -c to reverse the fitness value c
     pass

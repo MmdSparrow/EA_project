@@ -3,8 +3,8 @@ from numpy import random
 
 class Individual:
     """
-    this class is an abstraction of individual which contain two attribute:
-    1- genome: list of genes (e.g. [0,1,2] for a genome with length 3)
+    this class is an abstraction of an individual which contains two attributes:
+    1- genome: a list of genes (e.g. [0,1,2] for a genome with length 3)
     2- fitness: fitness value of the individual
     """
 
